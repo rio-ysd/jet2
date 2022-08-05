@@ -28,7 +28,8 @@ services:
       - ./html:/html
     ports:
       - 3000:3000
-    command: "while :; do sleep 10; done"
+    command: >
+      npm start
   nginx:
     image: nginx:stable
     volumes:
