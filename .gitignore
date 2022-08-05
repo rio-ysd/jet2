@@ -1,0 +1,17 @@
+# api
+*.gem
+.bundle
+.byebug_history
+.env*
+/api/node_modules
+/api/public/packs
+/api/public/packs-test
+bundled
+coverage
+pkg
+tmp
+/api/vendor
+
+# else
+.mysql_data
+.DS_Store
