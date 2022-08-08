@@ -1,6 +1,4 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import TweetsEdit from  './Edit';
+import TweetsEdit from './Edit';
 
 class TweetsCreate extends TweetsEdit {
   componentDidMount() {

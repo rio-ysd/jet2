@@ -1,9 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import App from '../App';
+import Loading from '../Loading';
+import { Link } from 'react-router-dom';
 
-class TweetsEdit extends React.Component {
+class TweetsEdit extends App {
   render() {
     let row = this.props.row;
+    if (!row) return <Loading />;
 
     return <>
       <form onSubmit={this.handleSubmit}>

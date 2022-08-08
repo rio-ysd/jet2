@@ -1,6 +1,5 @@
-import React from 'react';
-import TweetsShow from  './Show';
-import Edit from  '../../views/Tweets/Edit';
+import TweetsShow from './Show';
+import Edit from '../../views/Tweets/Edit';
 
 class TweetsEdit extends TweetsShow {
 	handleSubmit(e) {
@@ -23,9 +22,7 @@ class TweetsEdit extends TweetsShow {
 	}
 
   render() {
-    let respJson = (this.state || {}).respJson;
-
-    return <Edit row={respJson || {}} />
+    return <Edit row={(this.state || {}).respJson} />
   }
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 class Layout extends React.Component {
   render() {
@@ -9,11 +9,11 @@ class Layout extends React.Component {
           <Link className="navbar-item" to="/">
             <b>Devenue</b>
           </Link>
-          <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+          <span role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+          </span>
         </div>
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
@@ -21,35 +21,32 @@ class Layout extends React.Component {
               Tweets
             </Link>
             <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">
+              <span className="navbar-link">
                 More
-              </a>
+              </span>
               <div className="navbar-dropdown">
-                <a className="navbar-item">
+                <Link to="/tweets" className="navbar-item">
                   About
-                </a>
-                <a className="navbar-item">
-                  Jobs
-                </a>
-                <a className="navbar-item">
+                </Link>
+                <Link to="/tweets" className="navbar-item">
                   Contact
-                </a>
+                </Link>
                 <hr className="navbar-divider" />
-                <a className="navbar-item">
+                <Link to="/tweets" className="navbar-item">
                   Report an issue
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
-                <a className="button is-primary">
+                <Link to="/tweets" className="button is-primary">
                   <strong>Sign up</strong>
-                </a>
-                <a className="button is-light">
+                </Link>
+                <Link to="/tweets" className="button is-light">
                   Log in
-                </a>
+                </Link>
               </div>
             </div>
           </div>

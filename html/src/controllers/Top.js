@@ -1,6 +1,6 @@
-import React from 'react'
+import App from  './App';
 
-class Top extends React.Component {
+class Top extends App {
   render(){
     return(
       <div>

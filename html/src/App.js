@@ -1,6 +1,8 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './App.css';
+import './libs/date';
+import './libs/string';
 
 import Layout from  './views/Layout';
 import Top from  './controllers/Top';
@@ -10,6 +12,7 @@ import TweetsCreate from  './controllers/Tweets/Create';
 import TweetsEdit from  './controllers/Tweets/Edit';
 
 export default function App() {
+  console.log(1112)
   return (
     <BrowserRouter>
       <Layout>

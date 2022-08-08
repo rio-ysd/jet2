@@ -1,9 +1,11 @@
-import React from 'react'
+import App from '../App';
+import Loading from '../Loading';
 import { Link } from 'react-router-dom'
 
-class TweetsShow extends React.Component {
+class TweetsShow extends App {
   render() {
     let row = this.props.row;
+    if (!row) return <Loading />;
 
     return <>
       <table className="table">
@@ -19,6 +21,14 @@ class TweetsShow extends React.Component {
           <tr>
             <th>Content</th>
             <td>{row.content}</td>
+          </tr>
+          <tr>
+            <th>Created At</th>
+            <td>{row.created_at.toDatetime().format('yyyy/mm/dd hh:ii')}</td>
+          </tr>
+          <tr>
+            <th>Updated At</th>
+            <td>{row.updated_at.toDatetime().format('yyyy/mm/dd hh:ii')}</td>
           </tr>
         </tbody>
       </table>
