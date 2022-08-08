@@ -5,8 +5,8 @@ class Layout extends React.Component {
     return <>
       <hr />
       <nav className="pagination is-centered is-small" role="navigation" aria-label="pagination">
-        <a className="pagination-previous">&lt;</a>
-        <a className="pagination-next">&gt;</a>
+        <a className="pagination-previous"><i className="fas fa-chevron-left" /></a>
+        <a className="pagination-next"><i className="fas fa-chevron-right" /></a>
         <ul className="pagination-list">
           <li><a className="pagination-link" aria-label="Goto page 1">1</a></li>
           <li><span className="pagination-ellipsis">&hellip;</span></li>

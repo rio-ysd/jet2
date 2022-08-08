@@ -32,8 +32,14 @@ class TweetsShow extends App {
           </tr>
         </tbody>
       </table>
-      <Link className="button is-small mr-3" to="/tweets">Back</Link>
-      <Link className="button is-small is-success" to={`/tweets/${row.id}/edit`}>Edit</Link>
+      <Link className="button is-small mr-3" to="/tweets">
+        <i className="fas fa-chevron-left mr-1" />
+        Back
+      </Link>
+      <Link className="button is-small is-success" to={`/tweets/${row.id}/edit`}>
+        <i className="fas fa-pencil-alt mr-1" />
+        Edit
+      </Link>
     </>
   }
 }

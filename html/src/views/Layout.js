@@ -7,7 +7,8 @@ class Layout extends React.Component {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
-            <b>Devenue</b>
+            <i className="fas fa-rocket mr-1" />
+            <b>Jet2</b>
           </Link>
           <span role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true" />
@@ -42,9 +43,11 @@ class Layout extends React.Component {
             <div className="navbar-item">
               <div className="buttons">
                 <Link to="/tweets" className="button is-primary">
+                  <i className="fas fa-user-alt mr-1" />
                   <strong>Sign up</strong>
                 </Link>
                 <Link to="/tweets" className="button is-light">
+                  <i className="fas fa-sign-in-alt mr-1" />
                   Log in
                 </Link>
               </div>
@@ -52,7 +55,7 @@ class Layout extends React.Component {
           </div>
         </div>
       </nav>
-      <div className="container py-6">
+      <div id="main" className="container py-6">
         {this.props.children}
       </div>
       <footer className="footer">

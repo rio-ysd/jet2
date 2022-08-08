@@ -3,7 +3,6 @@ import Index from '../../views/Tweets/Index';
 
 class TweetsIndex extends App {
 	componentDidMount() {
-    console.log(999)
     fetch('/api/tweets').then((resp) => {
       if (resp.status !== 200) return;
 

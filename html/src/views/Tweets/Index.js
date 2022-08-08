@@ -10,7 +10,10 @@ class TweetsIndex extends App {
   
     return <>
       <div className="has-text-right">
-        <Link className="button is-primary mb-3" to="/tweets/new">New</Link>
+        <Link className="button is-primary mb-3" to="/tweets/new">
+        <i class="fas fa-cube mr-1" />
+        New
+      </Link>
       </div>
       <div className="table-container">
         <table className="table is-fullwidth is-hoverable">
@@ -28,8 +31,18 @@ class TweetsIndex extends App {
               <td>{row.title}</td>
               <td>{row.updated_at.toDatetime().format('yyyy/mm/dd hh:ii')}</td>
               <th className="has-text-right">
-                <Link className="button is-small mr-3" to={`/tweets/${row.id}`}>Show</Link>
-                <Link className="button is-small is-success" to={`/tweets/${row.id}/edit`}>Edit</Link>
+                <Link className="button is-small mr-2 is-info" to={`/tweets/${row.id}`}>
+                  <i className="far fa-file-alt mr-1" />
+                  Show
+                </Link>
+                <Link className="button is-small mr-2 is-success" to={`/tweets/${row.id}/edit`}>
+                  <i className="fas fa-pencil-alt mr-1" />
+                  Edit
+                </Link>
+                <Link className="button is-small is-danger" to={`/tweets/${row.id}/edit`}>
+                  <i className="fas fa-trash-alt mr-1" />
+                  Delete
+                </Link>
               </th>
             </tr>)}
           </tbody>

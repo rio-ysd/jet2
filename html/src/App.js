@@ -12,7 +12,6 @@ import TweetsCreate from  './controllers/Tweets/Create';
 import TweetsEdit from  './controllers/Tweets/Edit';
 
 export default function App() {
-  console.log(1112)
   return (
     <BrowserRouter>
       <Layout>

@@ -34,8 +34,14 @@ class TweetsEdit extends App {
           </tbody>
         </table>
       </form>
-      <Link className="button is-small mr-3" to="/tweets">Back</Link>
-      <Link className="button is-small is-info" to={`/tweets/${row.id}`}>Show</Link>
+      <Link className="button is-small mr-3" to="/tweets">
+        <i className="fas fa-chevron-left mr-1" />
+        Back
+      </Link>
+      <Link className="button is-small is-info" to={`/tweets/${row.id}`}>
+        <i className="far fa-file-alt mr-1" />
+        Show
+      </Link>
     </>
   }
 }
